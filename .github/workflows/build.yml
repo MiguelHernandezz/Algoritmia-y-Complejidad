@@ -1,0 +1,25 @@
+name: build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: PL4-5-optimizacion-logistica
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Unit tests (DP knapsack + backtracking TSP)
+        run: python -m pytest -v src/tests
+      - name: Run every scenario from the menu
+        working-directory: PL4-5-optimizacion-logistica/src
+        run: printf '1\n\n2\n\n3\n\n4\n\n5\n\n6\n6\n\n0\n' | timeout 300 python main.py | tail -n 25

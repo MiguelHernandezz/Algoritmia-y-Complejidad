@@ -1,0 +1,4 @@
+# Core algorithms (main.py) use only the standard library.
+pytest>=8          # unit tests in src/tests
+networkx>=3        # Grafo.py: campus graph drawing
+matplotlib>=3.8    # Grafo.py: campus graph drawing
