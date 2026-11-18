@@ -60,6 +60,21 @@ python -m pytest -v src/tests
 
 ---
 
+<!-- syllabus:start -->
+## 📘 Syllabus · official UAH teaching guide
+
+> **Algoritmia y Complejidad (780021)** · 6 ECTS · 2nd year · 2nd semester (elective) · contents from the 2025-26 teaching guide · [official subject page](https://www.uah.es/es/estudios/estudios-oficiales/grados/asignatura/Algoritmia-y-Complejidad-780021/)
+
+| Unit | Hours | Topics |
+|---|---|---|
+| Introduction to algorithmics | 12 h | – |
+| Basic algorithm design | 24 h | Greedy algorithms · Divide and conquer · Dynamic programming |
+| Advanced algorithms | 14 h | Intensive recursion: backtracking, branch and bound |
+| Non-determinism and complexity classes | 6 h | Non-deterministic algorithms · Complexity classes |
+<!-- syllabus:end -->
+
+---
+
 <div align="center">
 
 Miguel Hernández López · [GitHub](https://github.com/MiguelHernandezz) · [LinkedIn](https://www.linkedin.com/in/miguel-hernandez-lopez/)
